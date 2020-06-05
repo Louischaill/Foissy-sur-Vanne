@@ -1,0 +1,14 @@
+{
+  "accueil": [
+    {
+      "titre": "Introduction",
+      "texte": "Voici l'introduction",
+      "couleur": "gray"
+    },
+    {
+      "titre": "Contenu",
+      "texte": "Voici le contenu",
+      "couleur": "gray"
+    }
+  ]
+}

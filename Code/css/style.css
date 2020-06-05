@@ -1,0 +1,18 @@
+.navbar{
+	height: 10%;
+	width: 100%;
+	background-color: gray;
+}
+.image-authen{
+	margin-top:1%;
+	text-align: center;
+}
+.formulaire{
+	text-align: center;
+}
+.gang{
+	height: 10%;
+	width: 25%;
+	background-color: gray;
+	margin: 0 auto;
+}
