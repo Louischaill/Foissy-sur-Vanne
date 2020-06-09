@@ -10,47 +10,114 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="center_logo">
-            <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg" alt="logo de l'yonne">
+<nav class="navbar">
+    <div id="changer_taille">
+
+    </div>
+    <div id="parametres">
+        <img src="image/">
+    </div>
+    <div class="center_logo">
+        <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg"
+             alt="logo de l'yonne">
+    </div>
+    <ul class="liste_navbar">
+        <li onclick="location.href='#'">
+            <p>Acceuil</p>
+        </li>
+        <li onclick="location.href='#'">
+            <p>Ecole</p>
+        </li>
+        <li onclick="location.href='#'">
+            <p>S'installer</p>
+        </li>
+        <li onclick="location.href='#'">
+            <p>Administratives</p>
+        </li>
+        <li onclick="location.href='#'">
+            <p>Histoire et Lieux</p>
+        </li>
+    </ul>
+</nav>
+<img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
+
+<div class="main_body">
+    <div id="activities">
+        <div class="text_section">
+            <h1>Les Animations à Foissy-sur-vanne</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin scelerisque pulvinar est, pellentesque porttitor
+                libero rhoncus et. Suspendisse potenti. Etiam efficitur
+                euismod urna, finibus facilisis lorem eleifend sed. Nam
+                sed neque sit amet erat egestas sodales. Proin sed rutrum.</p>
         </div>
-        <ul class="liste_navbar">
-            <li onclick="location.href='#'">
-                <p>Acceuil</p>
-            </li>
-            <li onclick="location.href='#'">
-                <p>Ecole</p>
-            </li>
-            <li onclick="location.href='#'">
-                <p>S'installer</p>
-            </li>
-            <li onclick="location.href='#'">
-                <p>Administratives</p>
-            </li>
-            <li onclick="location.href='#'">
-                <p>Histoire et Lieux</p>
-            </li>
-        </ul>
-    </nav>
-    <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
-    <!--
-    <a onclick="redirection();" target="_blank">
-        <img src="image/uti.png" alt="Documentation du web - MDN" height="50" width="50"/>
-    </a>
-    -->
+        <div id="les_activites">
+            <div class="activite_vignette">
+                <img src="">
+                <h3>Pêche</h3>
+            </div>
+            <div class="activite_vignette">
+                <img src="">
+                <h3>Pêche</h3>
+            </div>
+            <div class="activite_vignette">
+                <img src="">
+                <h3>Pêche</h3>
+            </div>
+            <div class="activite_vignette">
+                <img src="">
+                <h3>Pêche</h3>
+            </div>
+        </div>
+        <div class="bouton_suivant">
+            <p> > </p>
+        </div>
+    </div>
+</div>
 
-    <script type="text/javascript">
-        var sessionId = "<?php echo $_SESSION['username']; ?>";
-        console.log(sessionId);
+<footer>
+    <div id="footer_centered">
+        <img id="logo_footer" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg" alt="logo_yonne">
+        <div class="text_footer">
+            <h3>Nous rencontrer :</h3>
+            <p>40 Grande Rue<br>
+                89190 Foissy-sur-Vanne<br>
+                <br>
+                Horaire Mairie :<br>
+                Le mardi de 8h 30 à 11h 00<br>
+                Le jeudi de 12h 30 à 16h 00</p>
+        </div>
+        <div class="text_footer">
+            <h3>Nous contacter :</h3>
+            <p>Tel: 03 86 86 70 80<br>
+                Tel: 03 86 65 57 04<br>
+                mail : test@test.fr<br>
+                <br>
+                Horaire Téléphonique :<br>
+                Vendredi, Samedi : 10h-13h / 15h-18h<br>
+                Mardi, Mercredi, Jeudi : 11h-13h / 15h-17h<br>
+                Dimanche, Lundi, Jours feriés : Fermé</p>
+        </div>
+    </div>
+</footer>
+<!--
+<a onclick="redirection();" target="_blank">
+    <img src="image/uti.png" alt="Documentation du web - MDN" height="50" width="50"/>
+</a>
+-->
 
-        function redirection() {
-            if (sessionId) {
-                document.location.href = "accueil.php";
-            } else {
-                document.location.href = "connexion.php";
-            }
+<script type="text/javascript">
+    var sessionId = "<?php echo $_SESSION['username']; ?>";
+    console.log(sessionId);
+
+    function redirection() {
+        if (sessionId) {
+            document.location.href = "accueil.php";
+        } else {
+            document.location.href = "connexion.php";
         }
-    </script>
+    }
+</script>
 </body>
 
 </html>
