@@ -20,7 +20,7 @@ body{
 	height: 4em;
 	border-radius: 2em;
 }
-.navbar{
+.navigation2{
 	height: 12em;
 	background-color: #F0F0F0;
 	position: absolute;
@@ -85,8 +85,6 @@ body{
 }
 .main_body{
 	padding: 2em;
-	width: 70em;
-	margin: 0 auto;
 	background-color: #EBEBEB;
 }
 footer{
@@ -113,7 +111,6 @@ footer{
 	width: min-content;
 }
 .text_section{
-	width: 20em;
 	padding: 2em;
 	background-color: white;
 }
@@ -125,36 +122,43 @@ footer{
 	font-size: 1.5em;
 }
 .activite_vignette img{
-	width: 15em;
-	height: 15em;
+	width: 240px;
+	height: 192px;
 }
 .activite_vignette h3{
 	text-align: center;
+	height: 48px;
+	background-color: #D0A891;
 }
 .activite_vignette{
 	width: 15em;
 	margin-left: 3em;
+	margin-top: 2em;
 }
-#activities{
+.activities{
 	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	width: min-content;
 }
 #les_activites{
 	display: flex;
 	flex-wrap: wrap;
 	width: 36em;
+	margin: 2em 0;
 }
 .bouton_suivant{
 	height: 10em;
 	width: 4em;
 	background-color: #C4C4C4;
 	cursor: pointer;
-
-	margin-left: 2em;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto 2em;
 }
 .bouton_suivant p{
-	font-size: 1.5em;
-	line-height: 6.5em;
-	margin: 0;
+	font-size: 2em;
+	line-height: 5em;
+	width: min-content;
+	margin: 0 auto;
+	color: white;
+	font-weight: bold;
 }
