@@ -1,6 +1,7 @@
 body{
 	padding: 0;
 	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 .image-authen{
 	margin-top:1%;
@@ -24,21 +25,34 @@ body{
 	height: 12em;
 	background-color: #F0F0F0;
 	position: absolute;
-	width: 70em;
+	width: 60em;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 	text-align: center;
 }
-.liste_navbar{
+#hamburger{
+	width: 6em;
+	height: 6em;
+	padding: 0.5em;
+	display: none;
+	margin: auto 1em;
+}
+#hamburger div{
+	height: 1em;
+	margin: 0.5em 0;
+	background-color: #C4C4C4;
+	border-radius: 1em;
+}
+#liste_navbar{
 	list-style: none;
 	position:relative;
 	width: max-content;
 	padding: 0;
 	margin: 1em auto 0;
 }
-.liste_navbar li{
+#liste_navbar li{
 	display: inline-block;
 	width: 11em;
 	height: 4em;
@@ -47,9 +61,8 @@ body{
 	border-radius: 2em;
 	cursor: pointer;
 }
-.liste_navbar li p{
+#liste_navbar li p{
 	font-size: 1em;
-	font-family: "Roboto", sans-serif;
 	line-height: 4em;
 	margin: 0;
 }
@@ -57,10 +70,10 @@ body{
 	height: 5em;
 	width: 5em;
 }
-.center_logo{
+#center_logo{
 	padding: 2em;
 	margin: 0 auto;
-	width: 5em;
+	width: 10em;
 }
 #image_centrale{
 	width: 100%;
@@ -84,7 +97,7 @@ body{
 	top: 1em;
 }
 .main_body{
-	padding: 2em;
+	padding: 4em;
 	background-color: #EBEBEB;
 }
 footer{
@@ -114,26 +127,33 @@ footer{
 	padding: 2em;
 	background-color: white;
 }
-.text_section h1{
-	font-family: "Roboto", sans-serif;
+.text_section h3{
 	text-align: center;
 }
 .text_section p {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 .activite_vignette img{
-	width: 240px;
-	height: 192px;
+	width: 12em;
+	height: 9em;
+	object-fit: cover;
+	background-color: white;
 }
-.activite_vignette h3{
+.activite_vignette p{
+	font-size: 1.25em;
 	text-align: center;
 	height: 48px;
-	background-color: #D0A891;
+	margin:0;
+}
+.activite_vignette:hover{
+	box-shadow: 1em 1em #bbbbbb;
+	transition: all 0.5s ease;
 }
 .activite_vignette{
-	width: 15em;
-	margin-left: 3em;
+	width: 12em;
+	margin-left: 2em;
 	margin-top: 2em;
+	transition: all 0.5s ease;
 }
 .activities{
 	display: flex;
@@ -144,8 +164,8 @@ footer{
 #les_activites{
 	display: flex;
 	flex-wrap: wrap;
-	width: 36em;
-	margin: 2em 0;
+	width: 30em;
+	margin: 1em 0;
 }
 .bouton_suivant{
 	height: 10em;
@@ -161,4 +181,36 @@ footer{
 	margin: 0 auto;
 	color: white;
 	font-weight: bold;
+}
+.citation{
+	margin-top: 3em;
+}
+.guillemet{
+	width: 8em;
+	height: 8em;
+	object-fit: cover;
+}
+.citation p{
+	font-size: 30px;
+	margin-top: 2em;
+	text-align: center;
+}
+.guillemet2{
+	margin-top: 6em;
+}
+.personne{
+	text-align: center;
+	width: 10em;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+.personne img{
+	height: 8em;
+	width: 8em;
+	object-fit: cover;
+}
+.le_personnel{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }

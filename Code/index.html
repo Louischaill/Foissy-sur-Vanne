@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/acceuil.js"></script>
 </head>
 
 <body>
-<nav class="navigation2">
+<nav class="navigation2" id="bar_navigation">
     <div id="changer_taille">
 
     </div>
     <div id="parametres">
         <img src="image/">
     </div>
-    <div class="center_logo">
+    <div id="center_logo">
         <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg"
              alt="logo de l'yonne">
     </div>
-    <ul class="liste_navbar">
+    <ul id="liste_navbar">
         <li onclick="location.href='#'">
             <p>Acceuil</p>
         </li>
@@ -39,78 +40,129 @@
             <p>Histoire et Lieux</p>
         </li>
     </ul>
+    <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
 <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
 
-<!--
-<div class="main_body">
-    <div id="activities">
-        <div class="text_section">
-            <h1>Les Animations à Foissy-sur-vanne</h1>
+<div class="container-lg main_body">
+    <div class="row">
+        <div class="col-lg-4 text_section">
+                <h3>Les Animations à Foissy-sur-vanne</h3>
+                <p>Foissy-sur-vanne propose de nombreuses activités au cours de l'année.
+                Entre partie de chasse, couscous ou fête de village, une nouvelles activitées
+                est proposé tout les deux mois à peut près. Cliquez sur une des vignettes pour
+                plus d'informations ou pour retrouver des photos des évènements passés !</p>
+        </div>
+        <div class="col-lg-8">
+            <div class="activities">
+                <div id="les_activites">
+                    <div class="activite_vignette">
+                        <img src="image/peche.jpeg" alt="vignette activité">
+                        <p style="background-color: #D0A891;">Pêche</p>
+                    </div>
+                    <div class="activite_vignette">
+                        <img src="image/chasse.png" alt="vignette activité">
+                        <p style="background-color: #FF7777;">Chasse</p>
+                    </div>
+                    <div class="activite_vignette">
+                        <img src="image/fete.png" alt="vignette activité">
+                        <p style="background-color: #FB9FB5;">Fete du village</p>
+                    </div>
+                    <div class="activite_vignette">
+                        <img src="image/petanque.gif" alt="vignette activité">
+                        <p style="background-color: #B5CFA1;">Pétanque</p>
+                    </div>
+                </div>
+                <div class="bouton_suivant">
+                    <p> > </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row citation">
+        <img class="guillemet col-2" src="image/guillement.png" alt="guillement de citation">
+        <p class="col-8">Foissy-sur-vanne c'est un village bien sûr, mais des gens surtout</p>
+        <img class="guillemet col-2 guillemet2" src="image/guillement2.png" alt="guillement de citation">
+    </div>
+    <div class="row">
+        <div class="col-lg-4 text_section">
+            <h3>Le Personnel</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Proin scelerisque pulvinar est, pellentesque porttitor
                 libero rhoncus et. Suspendisse potenti. Etiam efficitur
                 euismod urna, finibus facilisis lorem eleifend sed. Nam
                 sed neque sit amet erat egestas sodales. Proin sed rutrum.</p>
         </div>
-        <div id="les_activites">
-            <div class="activite_vignette">
-                <img src="">
-                <h3>Pêche</h3>
+        <div class="col-lg-8 le_personnel">
+            <div class="personne">
+                <img src="image/personnel/1.jpg" alt="photo du membre">
+                <p>Jeanne SAINCIERGE-DURAND<br>
+                    Retraitée<br>
+                    Maire</p>
             </div>
-            <div class="activite_vignette">
-                <img src="">
-                <h3>Pêche</h3>
+            <div class="personne">
+                <img src="image/personnel/2.jpg" alt="photo du membre">
+                <p>Denys ANTHOINE<br>
+                    Ingénieur<br>
+                    1er adjoint</p>
             </div>
-            <div class="activite_vignette">
-                <img src="">
-                <h3>Pêche</h3>
+            <div class="personne">
+                <img src="image/personnel/3.jpg" alt="photo du membre">
+                <p>Dominique BERTRAND<br>
+                    Sans emploi<br>
+                    2ème adjoint</p>
             </div>
-            <div class="activite_vignette">
-                <img src="">
-                <h3>Pêche</h3>
+            <div class="personne">
+                <img src="image/personnel/4.jpg" alt="photo du membre">
+                <p>Jacques ROY<br>
+                    Retraité<br>
+                    3ème adjoint</p>
             </div>
-        </div>
-        <div class="bouton_suivant">
-            <p> > </p>
-        </div>
-    </div>
-</div>
--->
-
-<div class="container-xl main_body">
-    <div class="row">
-        <div class="col-xl-4 text_section">
-                <h1>Les Animations à Foissy-sur-vanne</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin scelerisque pulvinar est, pellentesque porttitor
-                    libero rhoncus et. Suspendisse potenti. Etiam efficitur
-                    euismod urna, finibus facilisis lorem eleifend sed. Nam
-                    sed neque sit amet erat egestas sodales. Proin sed rutrum.</p>
-        </div>
-        <div class="col-xl-8">
-            <div class="activities">
-                <div id="les_activites">
-                    <div class="activite_vignette">
-                        <img src="">
-                        <h3>Pêche</h3>
-                    </div>
-                    <div class="activite_vignette">
-                        <img src="">
-                        <h3>Chasse</h3>
-                    </div>
-                    <div class="activite_vignette">
-                        <img src="">
-                        <h3>Fete du village</h3>
-                    </div>
-                    <div class="activite_vignette">
-                        <img src="">
-                        <h3>Couscous</h3>
-                    </div>
-                </div>
-                <div class="bouton_suivant">
-                    <p> > </p>
-                </div>
+            <div class="personne">
+                <img src="image/personnel/5.jpg" alt="photo du membre">
+                <p>Jean-Claude HIVERT<br>
+                    Chargé Logistique<br>
+                    Conseiller</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/6.jpg" alt="photo du membre">
+                <p>Tiffanie LIÉNARD<br>
+                    Aide-soignante<br>
+                    Conseillère</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/7.jpg" alt="photo du membre">
+                <p>Jacques DEN-DEKKER<br>
+                    Agent de Maîtrise<br>
+                    Conseiller</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/8.jpg" alt="photo du membre">
+                <p>Marjorie YUNG-PIAT<br>
+                    Infirmière<br>
+                    Conseillère</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/9.jpg" alt="photo du membre">
+                <p>Claire DIEUDONNÉ-VAJOU<br>
+                    Cadre Commerciale<br>
+                    Conseillère</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/10.jpg" alt="photo du membre">
+                <p>Lionel PROKOP<br>
+                    Retraité<br>
+                    Conseiller</p>
+            </div>
+            <div class="personne">
+                <img src="image/personnel/11.jpg" alt="photo du membre">
+                <p>Elie CHAMED<br>
+                    Agent de Maîtrise<br>
+                    Conseiller</p>
             </div>
         </div>
     </div>
