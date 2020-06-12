@@ -31,6 +31,21 @@ body{
 	left: 0;
 	right: 0;
 	text-align: center;
+	z-index: 1000;
+}
+#details{
+	position: absolute;
+	background-color: white;
+	padding: 3em 2em 2em;
+	top: 12em;
+	border-radius: 2em;
+	width: 50em;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+#details p{
+	text-align: left;
 }
 #hamburger{
 	width: 6em;
@@ -38,6 +53,7 @@ body{
 	padding: 0.5em;
 	display: none;
 	margin: auto 1em;
+	cursor: pointer;
 }
 #hamburger div{
 	height: 1em;
@@ -52,6 +68,9 @@ body{
 	padding: 0;
 	margin: 1em auto 0;
 }
+#liste_navbar #activated{
+	background-color: #99DA93;
+}
 #liste_navbar li{
 	display: inline-block;
 	width: 11em;
@@ -60,6 +79,9 @@ body{
 	text-align: center;
 	border-radius: 2em;
 	cursor: pointer;
+}
+#liste_navbar li:hover{
+	background-color: #BDBDBD;
 }
 #liste_navbar li p{
 	font-size: 1em;

@@ -1,8 +1,24 @@
+var showNavigation = function () {
+
+};
+var details_navbar = [
+    '',
+    '<p>Où sont situés les écoles les plus proches ? Quels est le système en place dans' +
+    'ma commune ?<br>\n' +
+    '<strong>Ecole :</strong> enseignement, etc...<br>' +
+    '<strong>Garderie :</strong> horaires d\'ouvertures/fermetures etc..<br>' +
+    '<strong>Bus :</strong> horaires, circuit etc...<br>' +
+    '<strong>Cantine :</strong> frais, horaires, système</p>',
+    '',
+    ''
+];
+
 var responsived = false;
 window.onload = function () {
     if (window.innerWidth < 960) {
         window.onresize();
     }
+    var hamburger = document.getElementById("hamburger").addEventListener("click", showNavigation)
 };
 window.onresize = function () {
     if (window.innerWidth < 960) {
@@ -43,4 +59,7 @@ window.onresize = function () {
         responsived = false;
     }
 };
-
+var bouton_navbar_hover = function (number) {
+    var details = document.getElementById("details");
+    console.log(details.innerHTML);
+};
