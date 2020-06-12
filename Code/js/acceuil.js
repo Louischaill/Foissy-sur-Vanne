@@ -2,15 +2,16 @@ var showNavigation = function () {
 
 };
 var details_navbar = [
-    '',
+    '<p>Quels activités sont proposées par Foissy ? Qui sont les personnes derrières' +
+    'le conseil général ?<br>',
     '<p>Où sont situés les écoles les plus proches ? Quels est le système en place dans' +
-    'ma commune ?<br>\n' +
+    'ma commune ?<br>' +
     '<strong>Ecole :</strong> enseignement, etc...<br>' +
     '<strong>Garderie :</strong> horaires d\'ouvertures/fermetures etc..<br>' +
     '<strong>Bus :</strong> horaires, circuit etc...<br>' +
     '<strong>Cantine :</strong> frais, horaires, système</p>',
-    '',
-    ''
+    '<p>Comment s\'intaller à Foissy-sur-vanne, quels sont les offres immobilières disponibles ?',
+    '<p>Comment faire une pièce d\'identité ?'
 ];
 
 var responsived = false;
@@ -61,5 +62,9 @@ window.onresize = function () {
 };
 var bouton_navbar_hover = function (number) {
     var details = document.getElementById("details");
-    console.log(details.innerHTML);
+    details.innerHTML = details_navbar[number];
+    details.style.opacity = "100%";
+};
+var bouton_navbar_hover_end = function () {
+    document.getElementById("details").style.opacity = "0";
 };

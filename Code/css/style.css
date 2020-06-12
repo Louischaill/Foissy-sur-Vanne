@@ -37,12 +37,14 @@ body{
 	position: absolute;
 	background-color: white;
 	padding: 3em 2em 2em;
-	top: 12em;
 	border-radius: 2em;
 	width: 50em;
 	margin: 0 auto;
+	top: 12em;
 	left: 0;
 	right: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
 #details p{
 	text-align: left;
