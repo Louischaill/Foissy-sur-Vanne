@@ -19,9 +19,16 @@
     <div id="parametres">
         <img src="image/">
     </div>
-    <div id="center_logo">
-        <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg"
-             alt="logo de l'yonne">
+    <div id="container_logo_ham">
+        <div id="center_logo">
+            <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg"
+                 alt="logo de l'yonne">
+        </div>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <ul id="liste_navbar">
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(0)" onmouseleave="bouton_navbar_hover_end()" id="activated">
@@ -40,11 +47,7 @@
             <p>Histoire et Lieux</p>
         </li>
     </ul>
-    <div id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div onclick="showNavigation()" id="reduit_navbar">▲</div>
 </nav>
 <div id="details" >
     <p>Où sont situés les écoles les plus proches ? Quels est le système en place dans

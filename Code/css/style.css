@@ -33,6 +33,10 @@ body{
 	text-align: center;
 	z-index: 1000;
 }
+#container_logo_ham{
+	display: flex;
+	justify-content: space-between;
+}
 #details{
 	position: absolute;
 	background-color: white;
@@ -62,6 +66,18 @@ body{
 	margin: 0.5em 0;
 	background-color: #C4C4C4;
 	border-radius: 1em;
+}
+#reduit_navbar{
+	display: none;
+	width: 10em;
+	height: 48px;
+	margin: 0 auto;
+	line-height: 48px;
+	color: white;
+	background-color: #E2E2E2;
+}
+#reduit_navbar:hover{
+	background-color: #BDBDBD;
 }
 #liste_navbar{
 	list-style: none;
