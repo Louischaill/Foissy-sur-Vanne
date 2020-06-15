@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Foissy-sur-Vanne</title>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/ecole.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nav_bar.css" type="text/css"/>
+    <script src="js/gestion_navbar.js"></script>
+    <script src="js/scroll.js"></script>
+</head>
+
+<body>
+<nav class="navigation2" id="bar_navigation">
+    <div id="changer_taille">
+        <img class="petit_plus" alt="petit-plus" src="image/zoom.png">
+        <img class="moyen_plus" alt="moyen-plus" src="image/zoom.png">
+        <img class="grand_plus" alt="grand_plus" src="image/zoom.png">
+    </div>
+    <div id="parametres">
+        <img alt="roue-crantée" src="image/parametre2.png">
+    </div>
+    <div id="container_logo_ham">
+        <div id="center_logo">
+            <img id="logo_yonne" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg"
+                 alt="logo de l'yonne">
+        </div>
+        <div id="hamburger" onclick="showNavigation()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <ul id="liste_navbar">
+        <li onclick="location.href='index.html'" onmouseover="bouton_navbar_hover(0)" onmouseleave="bouton_navbar_hover_end()">
+            <p>Acceuil</p>
+        </li>
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(1)" onmouseleave="bouton_navbar_hover_end()" id="activated">
+            <p>Ecole</p>
+        </li>
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(2)" onmouseleave="bouton_navbar_hover_end()" >
+            <p>S'installer</p>
+        </li>
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
+            <p>Administratives</p>
+        </li>
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" >
+            <p>Histoire et Lieux</p>
+        </li>
+    </ul>
+    <div onclick="showNavigation()" id="reduit_navbar">▲</div>
+</nav>
+<div id="details" onmouseover="details_entered()" onmouseleave="details_leaved()">
+    <p>Où sont situés les écoles les plus proches ? Quels est le système en place dans
+        ma commune ?<br>
+        <strong>Ecole :</strong> enseignement, etc...<br>
+        <strong>Garderie :</strong> horaires d'ouvertures/fermetures etc..<br>
+        <strong>Bus :</strong> horaires, circuit etc...<br>
+        <strong>Cantine :</strong> frais, horaires, système</p>
+</div>
+<img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
+
+
+<div class="container-lg main_body">
+    <h1>L'école à Foissy-sur-vanne</h1>
+    <div class="carree_vignette">
+        <div class="moitie_haute_vignette">
+            <div class="vignette" onclick="smoothScroll(document.getElementById('ecole'))">
+                <img src="image/ecole.jpg" alt="ecole">
+                <p class="titre_vignette">Ecole</p>
+            </div>
+            <div class="vignette" onclick="smoothScroll(document.getElementById('cantine'))">
+                <img src="image/cantine.jpg" alt="cantine">
+                <p class="titre_vignette">Cantine</p>
+            </div>
+        </div>
+        <div class="moitie_basse_vignette">
+            <div class="vignette" onclick="smoothScroll(document.getElementById('garderie'))">
+                <img src="image/garderie.jpg" alt="ecole">
+                <p class="titre_vignette">Garderie</p>
+            </div>
+            <div class="vignette" onclick="smoothScroll(document.getElementById('bus'))">
+                <img src="image/bus.jpg" alt="ecole">
+                <p class="titre_vignette">Bus</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg text_section ecole_section" id="ecole">
+        <h3>Ecole</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus tellus
+            eget faucibus suscipit. Integer vel nulla consequat, dignissim metus vitae,
+            molestie risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu viverra.
+            Nulla bibendum scelerisque euismod. Morbi id porta sapien. Aliquam felis erat,
+            ullamcorper sit amet est ultrices, ultricies rhoncus velit. Cras interdum
+            venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="cantine">
+        <h3>Cantine</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus tellus
+            eget faucibus suscipit. Integer vel nulla consequat, dignissim metus vitae,
+            molestie risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu viverra.
+            Nulla bibendum scelerisque euismod. Morbi id porta sapien. Aliquam felis erat,
+            ullamcorper sit amet est ultrices, ultricies rhoncus velit. Cras interdum
+            venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="garderie">
+        <h3>Garderie</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus tellus
+            eget faucibus suscipit. Integer vel nulla consequat, dignissim metus vitae,
+            molestie risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu viverra.
+            Nulla bibendum scelerisque euismod. Morbi id porta sapien. Aliquam felis erat,
+            ullamcorper sit amet est ultrices, ultricies rhoncus velit. Cras interdum
+            venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="bus">
+        <h3>Bus</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus tellus
+            eget faucibus suscipit. Integer vel nulla consequat, dignissim metus vitae,
+            molestie risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu viverra.
+            Nulla bibendum scelerisque euismod. Morbi id porta sapien. Aliquam felis erat,
+            ullamcorper sit amet est ultrices, ultricies rhoncus velit. Cras interdum
+            venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+    </div>
+</div>
+
+<footer>
+    <div id="footer_centered">
+        <img id="logo_footer" src="https://upload.wikimedia.org/wikipedia/fr/c/c1/Yonne_%2889%29_logo_2015.svg" alt="logo_yonne">
+        <div class="text_footer">
+            <h3>Nous rencontrer :</h3>
+            <p>40 Grande Rue<br>
+                89190 Foissy-sur-Vanne<br>
+                <br>
+                Horaire Mairie :<br>
+                Le mardi de 8h 30 à 11h 00<br>
+                Le jeudi de 12h 30 à 16h 00</p>
+        </div>
+        <div class="text_footer">
+            <h3>Nous contacter :</h3>
+            <p>Tel: 03 86 86 70 80<br>
+                Tel: 03 86 65 57 04<br>
+                mail : test@test.fr<br>
+                <br>
+                Horaire Téléphonique :<br>
+                Vendredi, Samedi : 10h-13h / 15h-18h<br>
+                Mardi, Mercredi, Jeudi : 11h-13h / 15h-17h<br>
+                Dimanche, Lundi, Jours feriés : Fermé</p>
+        </div>
+    </div>
+</footer>
+<!--
+<a onclick="redirection();" target="_blank">
+    <img src="image/uti.png" alt="Documentation du web - MDN" height="50" width="50"/>
+</a>
+-->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    var sessionId = "<?php echo $_SESSION['username']; ?>";
+    console.log(sessionId);
+
+    function redirection() {
+        if (sessionId) {
+            document.location.href = "accueil.php";
+        } else {
+            document.location.href = "connexion.php";
+        }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/*------ page présentant des détails à propos d'une activité ------*/
+.image_activite{
+    padding: 1em;
+    display: flex;
+}
+.image_activite img{
+    object-fit: contain;
+    width: inherit;
+    max-width: 30em;
+    margin: auto;
+}
+.moitie{
+    width: 50%;
+    display: flex;
+}
+.diaporama{
+    display: flex;
+    height: 30em;
+    background-size: cover;
+}
+.diaporama .legende{
+    margin: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30em;
+    padding: 2em 0 1em 1em;
+}
+.button_container{
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+}
+.legende p{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    color: white;
+}
+#right_button, #left_button{
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto 0;
+}
+#right_button h3,#left_button h3{
+    line-height: 64px;
+    text-align: center;
+}
+.indicateur{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    top: -2.5em;
+}
+.petit_rond{
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 1em;
+}

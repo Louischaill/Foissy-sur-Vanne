@@ -1,0 +1,33 @@
+/*------ page de l'Ecole ------*/
+.ecole_section {
+    margin-top: 2em;
+}
+#image_centrale{
+    height: 25em;
+}
+h1{
+    text-align: center;
+}
+.vignette{
+    width: min-content;
+    margin-right: 4em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.carree_vignette{
+    width: min-content;
+    margin: 0 auto;
+}
+.vignette .titre_vignette{
+    text-align: center;
+    font-size: 1.5em;
+}
+.moitie_basse_vignette, .moitie_haute_vignette{
+    display: flex;
+}
+.vignette img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 100%;
+}

@@ -1,0 +1,87 @@
+
+/*------Page d'acceuil------*/
+#image_centrale{
+	height: 50em;
+}
+
+.activite_vignette img{
+	width: 12em;
+	height: 9em;
+	object-fit: cover;
+	background-color: white;
+}
+.activite_vignette p{
+	font-size: 1.25em;
+	text-align: center;
+	height: 48px;
+	margin:0;
+}
+.activite_vignette:hover{
+	box-shadow: 1em 1em #bbbbbb;
+	transition: all 0.5s ease;
+}
+.activite_vignette{
+	width: 12em;
+	margin-left: 2em;
+	margin-top: 2em;
+	transition: all 0.5s ease;
+}
+.activities{
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	width: min-content;
+}
+#les_activites{
+	display: flex;
+	flex-wrap: wrap;
+	width: 30em;
+	margin: 1em 0;
+}
+.bouton_suivant{
+	height: 10em;
+	width: 4em;
+	background-color: #C4C4C4;
+	cursor: pointer;
+	margin: auto 2em;
+}
+.bouton_suivant p{
+	font-size: 2em;
+	line-height: 5em;
+	width: min-content;
+	margin: 0 auto;
+	color: white;
+	font-weight: bold;
+}
+.citation{
+	margin-top: 3em;
+}
+.guillemet{
+	width: 8em;
+	height: 8em;
+	object-fit: cover;
+}
+.citation p{
+	font-size: 30px;
+	margin-top: 2em;
+	text-align: center;
+}
+.guillemet2{
+	margin-top: 6em;
+}
+.personne{
+	text-align: center;
+	width: 10em;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+.personne img{
+	height: 8em;
+	width: 8em;
+	object-fit: cover;
+}
+.le_personnel{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
