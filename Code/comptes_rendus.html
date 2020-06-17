@@ -7,9 +7,10 @@
     <!--Boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/details_activites.css" type="text/css"/>
+    <link rel="stylesheet" href="css/comptes_rendus.css" type="text/css"/>
     <link rel="stylesheet" href="css/nav_bar.css" type="text/css"/>
     <script src="js/gestion_navbar.js"></script>
+    <script src="js/compte_rendus.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
             <p>Administratives</p>
         </li>
-        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" id="activated">
             <p>Histoire et Lieux</p>
         </li>
     </ul>
@@ -64,41 +65,80 @@
 <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
 
 <div class="container-lg main_body">
-    <div class="row">
-        <div class="col-lg-6 image_activite">
-            <img src="image/activites/1.jpeg" alt="image du personnel">
+    <h1>Comptes rendus des conseils municipaux</h1>
+    <p>Vous pouvez retrouver ici les différents
+        comptes rendus des conseils municipaux
+        passés trier par année. Pour consulter
+        une année ou un compte rendu, cliquez dessus.</p>
+
+    <div class="annee">
+        <div class="annee_titre">
+            <button>▲</button>
+            <h3>2020</h3>
         </div>
-        <div class="col-lg-6 text_section">
-            <h3>Informations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                metus vitae, molestie risus. Cras eu vestibulum urna. Etiam ornare eu
-                nisi eu viverra. Nulla bibendum scelerisque euismod. Morbi id porta
-                sapien. Aliquam felis erat, ullamcorper sit amet est ultrices, ultricies
-                rhoncus velit. Cras interdum venenatis quam quis lobortis. Nulla ac nunc quam.</p>
-        </div>
-    </div>
-    <div class="diaporama" style="background-image: url(image/activites/1.jpeg)">
-        <div class="moitie">
-            <div id="right_button"><h3> < </h3></div>
-        </div>
-        <div class="legende row">
-            <div class="col-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                    tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                    metus vitae, molestie risus. Cras eu vestibulum urna.</p>
+        <div class="annee_container" style="display: none">
+            <div class="jour">
+                <div class="jour_titre">
+                    <button>▲</button>
+                    <h3>Comptes rendus du 22 janvier 2020</h3>
+                </div>
+                <div class="jour_container" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus maximus tellus eget faucibus suscipit. Integer
+                        vel nulla consequat, dignissim metus vitae, molestie
+                        risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu
+                        viverra. Nulla bibendum scelerisque euismod. Morbi id
+                        porta sapien. Aliquam felis erat, ullamcorper sit amet
+                        est ultrices, ultricies rhoncus velit. Cras interdum
+                        venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+                </div>
             </div>
-            <div class="col-2 button_container">
-                <div id="left_button"><h3> > </h3></div>
+        </div>
+    </div>
+
+    <div class="annee">
+        <div class="annee_titre">
+            <button>▲</button>
+            <h3>2019</h3>
+        </div>
+        <div class="annee_container" style="display: none">
+            <div class="jour">
+                <div class="jour_titre">
+                    <button>▲</button>
+                    <h3>Comptes rendus du 22 janvier 2019</h3>
+                </div>
+                <div class="jour_container" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus maximus tellus eget faucibus suscipit. Integer
+                        vel nulla consequat, dignissim metus vitae, molestie
+                        risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu
+                        viverra. Nulla bibendum scelerisque euismod. Morbi id
+                        porta sapien. Aliquam felis erat, ullamcorper sit amet
+                        est ultrices, ultricies rhoncus velit. Cras interdum
+                        venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+                </div>
+            </div>
+            <div class="jour">
+                <div class="jour_titre">
+                    <button>▲</button>
+                    <h3>Comptes rendus du 21 janvier 2019</h3>
+                </div>
+                <div class="jour_container" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus maximus tellus eget faucibus suscipit. Integer
+                        vel nulla consequat, dignissim metus vitae, molestie
+                        risus. Cras eu vestibulum urna. Etiam ornare eu nisi eu
+                        viverra. Nulla bibendum scelerisque euismod. Morbi id
+                        porta sapien. Aliquam felis erat, ullamcorper sit amet
+                        est ultrices, ultricies rhoncus velit. Cras interdum
+                        venenatis quam quis lobortis. Nulla ac nunc quam.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="indicateur">
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
-    </div>
+
 </div>
+
 
 <footer>
     <div id="footer_centered">

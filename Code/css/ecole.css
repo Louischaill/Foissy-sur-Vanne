@@ -10,7 +10,8 @@ h1{
 }
 .vignette{
     width: min-content;
-    margin-right: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
     margin-top: 2em;
     cursor: pointer;
 }

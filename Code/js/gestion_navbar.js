@@ -28,7 +28,7 @@ var details_leaved = function (){
     document.getElementById("details").style.opacity = "0";
     timing_function = setTimeout(function () {
         timeOut = false;
-    }, 3000);
+    }, 1000);
 };
 
 var showed = false;
@@ -103,7 +103,7 @@ window.onresize = function () {
         liste_navbar.style.width = "100%";
         liste_navbar.style.alignItems = "center";
         liste_navbar.style.margin = "0";
-        liste_navbar.style.border = "solid #C4C4C4"
+        liste_navbar.style.border = "solid #C4C4C4";
 
         var childs = liste_navbar.childNodes;
         var j = 0;
@@ -126,6 +126,7 @@ window.onresize = function () {
         p = document.createElement("p");
         p.innerHTML = details_navbar[details_navbar.length-1];
         liste_navbar.insertBefore(p, childs[childs.length]);
+        document.getElementById("details").style.display = "none";
 
         responsived = true;
     }else {
@@ -134,7 +135,7 @@ window.onresize = function () {
         }
 
         document.getElementById('bar_navigation').style.width = "60em";
-        document.getElementById("changer_taille").style.display = "block";
+        document.getElementById("changer_taille").style.display = "flex";
         document.getElementById("parametres").style.display = "block";
 
         document.getElementById("center_logo").style.margin = "0 auto";
@@ -164,6 +165,8 @@ window.onresize = function () {
         }
         document.getElementById("hamburger").style.display = "none";
         document.getElementById("reduit_navbar").style.display = "none";
+        document.getElementById("details").style.display = "block";
+
         responsived = false;
     }
 };
