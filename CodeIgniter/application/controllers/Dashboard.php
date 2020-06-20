@@ -179,7 +179,7 @@ class Dashboard extends CI_Controller {
 				);
 				var_dump($data);
 				if	($this->Dashboard_model->create_formu($data)){
-					//redirect("dashboard");
+					redirect("dashboard");
 
 				}
 			}

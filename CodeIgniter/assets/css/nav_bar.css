@@ -1,0 +1,181 @@
+/*------ Corps du site ------*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+#image_centrale{
+    width: 100%;
+    object-fit: cover;
+}
+.main_body{
+    padding: 4em;
+    background-color: #EBEBEB;
+}
+/*------ Footer ------*/
+footer{
+    width: 100%;
+    background-color: #333333;
+    padding: 2em;
+}
+#logo_footer{
+    width: 13em;
+    height: 13em;
+    margin: auto 2em auto 0;
+}
+.text_footer{
+    margin-left: 2em;
+    flex-direction: column;
+    width: 20em;
+}
+#footer_centered{
+    height: 20em;
+    color: white;
+    margin: 0 auto;
+    align-items: flex-start;
+    display: flex;
+    width: min-content;
+}
+/*------Barre de navigation------*/
+.navigation2{
+    height: 12em;
+    background-color: #F0F0F0;
+    position: absolute;
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+}
+#container_logo_ham{
+    display: flex;
+    justify-content: space-between;
+}
+#details{
+    position: absolute;
+    background-color: white;
+    padding: 3em 2em 2em;
+    border-radius: 2em;
+    width: 50em;
+    height: min-content;
+    margin: 0 auto;
+    top: 12em;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#details p{
+    text-align: left;
+}
+#hamburger{
+    width: 6em;
+    height: 6em;
+    padding: 0.5em;
+    display: none;
+    margin: auto 1em;
+    cursor: pointer;
+}
+#hamburger div{
+    height: 1em;
+    margin: 0.5em 0;
+    background-color: #C4C4C4;
+    border-radius: 1em;
+}
+#reduit_navbar{
+    display: none;
+    width: 10em;
+    height: 48px;
+    margin: 0 auto;
+    line-height: 48px;
+    color: white;
+    background-color: #E2E2E2;
+}
+#reduit_navbar:hover{
+    background-color: #BDBDBD;
+}
+#liste_navbar{
+    list-style: none;
+    position:relative;
+    width: max-content;
+    padding: 0;
+    margin: 1em auto 0;
+}
+#liste_navbar #activated{
+    background-color: #99DA93;
+}
+#liste_navbar li{
+    display: inline-block;
+    width: 11em;
+    height: 4em;
+    background-color: #E2E2E2;
+    text-align: center;
+    border-radius: 2em;
+    cursor: pointer;
+}
+#liste_navbar li:hover{
+    background-color: #BDBDBD;
+}
+#liste_navbar li p{
+    font-size: 1em;
+    line-height: 4em;
+    margin: 0;
+}
+#logo_yonne{
+    height: 5em;
+    width: 5em;
+}
+#center_logo{
+    padding: 2em;
+    margin: 0 auto;
+    width: 10em;
+}
+#parametres{
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+#parametres img{
+    width: 3em;
+    height: 3em;
+}
+#changer_taille{
+    display: flex;
+    justify-content: space-between;
+    width: 9em;
+    height: 3em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+}
+#changer_taille img{
+    margin: auto 0;
+}
+#changer_taille .petit_plus{
+    height: 1em;
+    width: 1em;
+}
+#changer_taille .moyen_plus{
+    height: 2em;
+    width: 2em;
+}
+#changer_taille .grand_plus{
+    height: 3em;
+    width: 3em;
+}
+
+/*------ divers ------*/
+.text_section{
+    padding: 2em;
+    background-color: white;
+}
+.text_section h3{
+    text-align: center;
+}
+.text_section p {
+    font-size: 1em;
+}

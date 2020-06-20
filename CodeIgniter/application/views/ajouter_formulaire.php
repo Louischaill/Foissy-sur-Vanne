@@ -22,10 +22,6 @@
             </div>
             <input type="submit" value="Créer" class="btn btn-primary">
 
-
-
-
-
             <?php echo form_close(); ?>      
          </div>
       </div>
