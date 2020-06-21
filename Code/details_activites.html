@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/details_activites.css" type="text/css"/>
     <link rel="stylesheet" href="css/nav_bar.css" type="text/css"/>
     <script src="js/gestion_navbar.js"></script>
+    <script src="js/diaporama.js"></script>
 </head>
 
 <body>
@@ -66,7 +67,7 @@
 <div class="container-lg main_body">
     <div class="row">
         <div class="col-lg-6 image_activite">
-            <img src="image/activites/1.jpeg" alt="image du personnel">
+            <img src="image/diaporama/activites/1.jpeg" alt="image du personnel">
         </div>
         <div class="col-lg-6 text_section">
             <h3>Informations</h3>
@@ -78,9 +79,14 @@
                 rhoncus velit. Cras interdum venenatis quam quis lobortis. Nulla ac nunc quam.</p>
         </div>
     </div>
-    <div class="diaporama" style="background-image: url(image/activites/1.jpeg)">
+    <div id="diaporama_images" style="display: none">
+        <img src="image/diaporama/activites/1.jpeg">
+        <img src="image/diaporama/activites/2.jpg">
+        <img src="image/diaporama/activites/3.jpg">
+    </div>
+    <div class="diaporama" id="diaporama" style="background-image: url(image/diaporama/activites/1.jpeg)">
         <div class="moitie">
-            <div id="right_button"><h3> < </h3></div>
+            <div id="right_button" onclick="previous_image()"><h3> < </h3></div>
         </div>
         <div class="legende row">
             <div class="col-10">
@@ -89,7 +95,7 @@
                     metus vitae, molestie risus. Cras eu vestibulum urna.</p>
             </div>
             <div class="col-2 button_container">
-                <div id="left_button"><h3> > </h3></div>
+                <div id="left_button" onclick="next_image()"><h3> > </h3></div>
             </div>
         </div>
     </div>
