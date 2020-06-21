@@ -7,10 +7,10 @@
     <!--Boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/details_activites.css" type="text/css"/>
+    <link rel="stylesheet" href="css/administratif.css" type="text/css"/>
     <link rel="stylesheet" href="css/nav_bar.css" type="text/css"/>
     <script src="js/gestion_navbar.js"></script>
-    <script src="js/diaporama.js"></script>
+    <script src="js/compte_rendus.js"></script>
 </head>
 
 <body>
@@ -44,10 +44,10 @@
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(2)" onmouseleave="bouton_navbar_hover_end()" >
             <p>S'installer</p>
         </li>
-        <li onclick="location.href='administratif.html'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
             <p>Administratives</p>
         </li>
-        <li onclick="location.href='histoire.html'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='histoire.html'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" id="activated">
             <p>Histoire et Lieux</p>
         </li>
     </ul>
@@ -65,46 +65,46 @@
 <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
 
 <div class="container-lg main_body">
-    <div class="row">
-        <div class="col-lg-6 image_activite">
-            <img src="image/diaporama/activites/1.jpeg" alt="image du personnel">
+    <div class="page">
+        <div class="page_titre" style="background-image: url(image/foret.jpg)">
+            <h3>Plan local d'Urbanisme Intercommunal</h3>
+            <button onclick="location.href='PLUI.html'">▶</button>
         </div>
-        <div class="col-lg-6 text_section">
-            <h3>Informations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                metus vitae, molestie risus. Cras eu vestibulum urna. Etiam ornare eu
-                nisi eu viverra. Nulla bibendum scelerisque euismod. Morbi id porta
-                sapien. Aliquam felis erat, ullamcorper sit amet est ultrices, ultricies
-                rhoncus velit. Cras interdum venenatis quam quis lobortis. Nulla ac nunc quam.</p>
-        </div>
-    </div>
-    <div id="diaporama_images" style="display: none">
-        <img src="image/diaporama/activites/1.jpeg">
-        <img src="image/diaporama/activites/2.jpg">
-        <img src="image/diaporama/activites/3.jpg">
-    </div>
-    <div class="diaporama" id="diaporama" style="background-image: url(image/diaporama/activites/1.jpeg)">
-        <div class="moitie">
-            <div id="right_button" onclick="previous_image()"><h3> < </h3></div>
-        </div>
-        <div class="legende row">
-            <div class="col-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                    tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                    metus vitae, molestie risus. Cras eu vestibulum urna.</p>
-            </div>
-            <div class="col-2 button_container">
-                <div id="left_button" onclick="next_image()"><h3> > </h3></div>
-            </div>
+        <div class="page_container">
+            <p>En France, le plan local d'urbanisme (PLU), ou le plan local d'urbanisme intercommunal
+                (PLUI), est le principal document de planification de l'urbanisme au niveau communal
+                (PLU) ou intercommunal (PLUI). Il remplace le plan d'occupation des sols (POS) depuis
+                la loi relative à la solidarité et au renouvellement urbains du 13 décembre 2000, dite
+                « loi SRU »1.<br><br>
+                Plus simplement, c'est un projet global d'aménagement de la commune (PLU) ou des
+                communes (PLUI) dans un souci de respect du développement durable dans le cadre du
+                Projet d'Aménagement et de Développement Durable (PADD), tout en respectant les
+                politiques d'urbanisme, d'habitat et de déplacements urbains2. </p>
         </div>
     </div>
-    <div class="indicateur">
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
+
+    <div class="page">
+        <div class="page_titre" style="background-image: url(image/foret.jpg)">
+            <h3>Comptes rendus des conseils municipaux</h3>
+            <button onclick="location.href='comptes_rendus.html'">▶</button>
+        </div>
+        <div class="page_container">
+            <p>De nombreux conseils municipaux se déroulent chaque années, ceux ci sont résumé dans des comptes rendus que vous pouvez consulter ici.</p>
+        </div>
     </div>
+
+    <div class="page">
+        <div class="page_titre" style="background-image: url(image/foret.jpg)">
+            <h3>Démarches Administratives</h3>
+            <button onclick="location.href='demarches_administratives.html'">▶</button>
+        </div>
+        <div class="page_container">
+            <p>Besoin d'informations afin d'effectuer une démarche administrative ? Vous pourrez en trouver une ici.</p>
+        </div>
+    </div>
+
 </div>
+
 
 <footer>
     <div id="footer_centered">

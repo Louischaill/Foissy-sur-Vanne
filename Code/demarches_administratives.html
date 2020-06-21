@@ -7,10 +7,10 @@
     <!--Boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/details_activites.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ecole.css" type="text/css"/>
     <link rel="stylesheet" href="css/nav_bar.css" type="text/css"/>
     <script src="js/gestion_navbar.js"></script>
-    <script src="js/diaporama.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <li onclick="location.href='index.html'" onmouseover="bouton_navbar_hover(0)" onmouseleave="bouton_navbar_hover_end()">
             <p>Acceuil</p>
         </li>
-        <li onclick="location.href='ecole.html'" onmouseover="bouton_navbar_hover(1)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='ecole.html'" onmouseover="bouton_navbar_hover(1)" onmouseleave="bouton_navbar_hover_end()" id="activated">
             <p>Ecole</p>
         </li>
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(2)" onmouseleave="bouton_navbar_hover_end()" >
@@ -61,48 +61,77 @@
         <strong>Bus :</strong> horaires, circuit etc...<br>
         <strong>Cantine :</strong> frais, horaires, système</p>
 </div>
-
 <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
 
+
 <div class="container-lg main_body">
-    <div class="row">
-        <div class="col-lg-6 image_activite">
-            <img src="image/diaporama/activites/1.jpeg" alt="image du personnel">
-        </div>
-        <div class="col-lg-6 text_section">
-            <h3>Informations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                metus vitae, molestie risus. Cras eu vestibulum urna. Etiam ornare eu
-                nisi eu viverra. Nulla bibendum scelerisque euismod. Morbi id porta
-                sapien. Aliquam felis erat, ullamcorper sit amet est ultrices, ultricies
-                rhoncus velit. Cras interdum venenatis quam quis lobortis. Nulla ac nunc quam.</p>
-        </div>
-    </div>
-    <div id="diaporama_images" style="display: none">
-        <img src="image/diaporama/activites/1.jpeg">
-        <img src="image/diaporama/activites/2.jpg">
-        <img src="image/diaporama/activites/3.jpg">
-    </div>
-    <div class="diaporama" id="diaporama" style="background-image: url(image/diaporama/activites/1.jpeg)">
-        <div class="moitie">
-            <div id="right_button" onclick="previous_image()"><h3> < </h3></div>
-        </div>
-        <div class="legende row">
-            <div class="col-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus
-                    tellus eget faucibus suscipit. Integer vel nulla consequat, dignissim
-                    metus vitae, molestie risus. Cras eu vestibulum urna.</p>
+    <h1>Démarches Administratives</h1>
+    <div class="carree_vignette">
+        <div class="moitie_haute_vignette">
+            <div class="vignette" onclick="smoothScroll(document.getElementById('cni_passeport'))">
+                <img src="image/cni_passeport.jpg" alt="carte nationale d'identité et passeport">
+                <p class="titre_vignette">CNI et passeports</p>
             </div>
-            <div class="col-2 button_container">
-                <div id="left_button" onclick="next_image()"><h3> > </h3></div>
+            <div class="vignette" onclick="smoothScroll(document.getElementById('permis-de-construire'))">
+                <img src="image/permis-de-construire.jpg" alt="permis de contruire">
+                <p class="titre_vignette">Permis de construire</p>
+            </div>
+        </div>
+        <div class="moitie_basse_vignette">
+            <div class="vignette" onclick="smoothScroll(document.getElementById('declaration_travaux'))">
+                <img src="image/declaration_travaux.jpeg" alt="declaration de travaux">
+                <p class="titre_vignette">Declaration de travaux</p>
+            </div>
+            <div class="vignette" onclick="smoothScroll(document.getElementById('carte_electorale'))">
+                <img src="image/carte_electorale.jpg" alt="carte électorale">
+                <p class="titre_vignette">Inscription sur liste électorale</p>
             </div>
         </div>
     </div>
-    <div class="indicateur">
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
-        <div class="petit_rond"></div>
+
+    <div class="container-lg text_section ecole_section" id="cni_passeport">
+        <h3>CNI et passeports</h3>
+        <p>1 - Rendez vous sur le site du gouvernement pour une pré-demande : https://passeport.ants.gouv.fr/Vos-demarches<br>
+            <br>
+            2- Conservez vos identifiants et prenez rendez vous avec notre maire. Voir les horaires<br>
+            <br>
+            3- Venez a la mairie le jour prévu avec vos pièces justificatives et votre numéro de pré-demande.<br>
+            <br>
+            4- L’equipe de notre mairie vous accueillera, prendra vos documents et recueillera vos empreintes.</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="permis-de-construire">
+        <h3>Permis de construire</h3>
+        <p>Un permis de construire est exigé :<br>
+            <br>
+            - Pour les travaux créant une nouvelle construction, c’est-à-dire une construction indépendante du bâti existant sur la propriété, et qui ajoutent une surface plancher ou une emprise au sol supérieure à 40m².<br>
+            <br>
+            - Pour les travaux sur construction existante qui ajoutent entre 20 et 40 m² de surface plancher ou d’emprise au sol et qui portent la surface totale de la construction à plus de 150m².<br>
+            <br>
+            Le recours à l’architecte est obligatoire si le projet a une surface plancher supérieur à 150m².<br>
+            <br>
+            Pour plus d’informations, cliquer ici.</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="declaration_travaux">
+        <h3>Declaration de travaux</h3>
+        <p>La déclaration de travaux est un document administratif obligatoire pour les travaux de faible importance.<br>
+            <br>
+            Elle doit être effectuée :<br>
+            <br>
+            - pour tout projet de construction nouvelle ou d'agrandissement d'une surface hors œuvre brute (SHOB) comprise entre 2m² et 20m²<br>
+            <br>
+            - lors de la transformation de plus de 10m² de SHOB en SHON (surface hors œuvre nette)<br>
+            <br>
+            - lors de la modification de l'aspect extérieur d'un bâtiment<br>
+            <br>
+            - lors d'un changement d'affectation</p>
+    </div>
+    <div class="container-lg text_section ecole_section" id="carte_electorale">
+        <h3>Inscription sur liste électorale</h3>
+        <p>Pour s’inscrire sur les listes électorales, deux possibilités :<br>
+            <br>
+            – Se rendre directement en mairie, avec les pièces justificatives demandées.<br>
+            <br>
+            – Par courrier en envoyant à la mairie les pièces justificatives demandées.</p>
     </div>
 </div>
 
