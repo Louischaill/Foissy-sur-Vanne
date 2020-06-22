@@ -11,7 +11,7 @@
     <script src="<?php echo base_url();?>assets/js/gestion_navbar.js"></script>
     <script src="<?php echo base_url();?>assets/js/scroll.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+    <script src="<?php echo base_url();?>assets/js/diaporama.js"></script>
 </head>
 
 <body>

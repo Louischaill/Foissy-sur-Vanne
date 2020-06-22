@@ -6,7 +6,7 @@
         <h1>404</h1>
       </div>
       <h2>Oops! La page n'existe pas</h2>
-      <a href="<?= site_url("home") ?>">Retour au menu</a>
+      <a href="<?= site_url("accueil") ?>">Retour au menu</a>
     </div>
   </div>
 </div>

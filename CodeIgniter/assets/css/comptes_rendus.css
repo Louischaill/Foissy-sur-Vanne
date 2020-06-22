@@ -1,0 +1,49 @@
+/*------ page sur répertoriant les différents comptes rendus des conseils municipaux ------*/
+#image_centrale{
+    height: 25em;
+}
+h1{
+    text-align: center;
+    margin: 1em 0;
+}
+.annee{
+    border: thin solid #b6b6b6;
+    background-color: white;
+    margin-top: 2em;
+}
+.annee_titre, .jour_titre{
+    border: thin solid #b6b6b6;
+    display: flex;
+    flex-direction: row;
+}
+.annee_titre button, .jour_titre button{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border: medium solid #9c9c9c;
+    color: #9c9c9c;
+    /*transform: rotate(180deg);*/
+    transition: all 0.25s ease-in-out;
+}
+.annee_titre button:hover, .jour_titre button:hover{
+    background-color: #9c9c9c;
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+.annee_titre h3, .jour_titre h3{
+    width: 100%;
+    text-align: center;
+    line-height: 64px;
+    margin: 0;
+}
+.annee_container, .jour_container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.jour{
+    border: thin solid #b6b6b6;
+    background-color: white;
+    margin-top: 1em;
+    width: 100%;
+}

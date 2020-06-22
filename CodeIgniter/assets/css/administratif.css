@@ -1,0 +1,43 @@
+/*------ page de redirection vers les pages administratives ------*/
+#image_centrale{
+    height: 25em;
+}
+.page_titre{
+    border: thin solid #b6b6b6;
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+}
+.page_titre button{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border: medium solid #5dc44a;
+    color: #5dc44a;
+    /*transform: rotate(180deg);*/
+    transition: all 0.25s ease-in-out;
+}
+.page_titre button:hover{
+    background-color: #5dc44a;
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+.page_titre h3{
+    width: 100%;
+    text-align: center;
+    line-height: 64px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+.page_container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.page{
+    border: thin solid #b6b6b6;
+    background-color: white;
+    margin-top: 1em;
+    width: 100%;
+}

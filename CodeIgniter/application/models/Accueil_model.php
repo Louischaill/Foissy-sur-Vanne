@@ -74,20 +74,11 @@ class Accueil_model extends CI_Model {
 		$place = $place-1;
 		return	$this->db->set('Placement',$place)->where('PrimaK', $data->PrimaK)->update('PersonnelFoissy');
 	}
-		public function delete_personnel($data){
+	public function delete_personnel($data){
 		return $this->db
 		->where('PrimaK',$data)
 		->delete("PersonnelFoissy");
 	}
-
-
-	public function create_formu($data){
-		return	$this->db->insert('Accueil', $data);
-	}
-	public function modif_formu($data){
-		return	$this->db->set('Placement',$data['Position'])->set('Titre',$data['Titre'])->set('Description',$data['Description'])->where('PrimaK',$data['PrimaK'])->update('Accueil');
-	}
-
 
 
 
