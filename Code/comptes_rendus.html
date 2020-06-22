@@ -44,10 +44,10 @@
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(2)" onmouseleave="bouton_navbar_hover_end()" >
             <p>S'installer</p>
         </li>
-        <li onclick="location.href='administratif.html'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='administratif.html'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" id="activated">
             <p>Administratif</p>
         </li>
-        <li onclick="location.href='histoire.html'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" id="activated">
+        <li onclick="location.href='histoire.html'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()">
             <p>Histoire et Lieux</p>
         </li>
     </ul>
@@ -65,6 +65,7 @@
 <img src="image/vue-aerienne.jpg" alt="image_centrale" id="image_centrale">
 
 <div class="container-lg main_body">
+    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='administratif.html'">Retourner en arrière</button>
     <h1>Comptes rendus des conseils municipaux</h1>
     <p>Vous pouvez retrouver ici les différents
         comptes rendus des conseils municipaux
