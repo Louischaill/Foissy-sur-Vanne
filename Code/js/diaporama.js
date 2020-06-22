@@ -14,12 +14,17 @@ var previous_image = function (){
     }
     refresh_image();
 }
-
+var images;
+var textes;
 var refresh_image = function (){
     var images = document.getElementById("diaporama_images").children;
     document.getElementById("diaporama").style.backgroundImage="url("+ images[n_image].src +")";
 }
 
 window.addEventListener('load', function (){
-    n_max_images = document.getElementById("diaporama_images").children.length-1;
+    var all = document.getElementById("diaporama_images").children;
+    for(var i=0; i<all.length ; i++){
+        if(all[i])
+    }
+    n_max_images = (document.getElementById("diaporama_images").children.length/2)-1;
 });

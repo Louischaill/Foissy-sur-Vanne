@@ -56,7 +56,7 @@ var details_navbar = [
     '<strong>Cantine :</strong> frais, horaires, système',
     'Comment s\'intaller à Foissy-sur-vanne, quels sont les offres immobilières disponibles ?',
     'Comment faire une pièce d\'identité ?',
-    'pas d\'idée'
+    'lorem ipsum'
 ];
 
 
