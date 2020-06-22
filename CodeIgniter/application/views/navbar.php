@@ -28,7 +28,7 @@
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(2)" onmouseleave="bouton_navbar_hover_end()" >
             <p>S'installer</p>
         </li>
-        <li onclick="location.href='<?= site_url("plui")?>'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
+        <li onclick="location.href='<?= site_url("administratif")?>'" onmouseover="bouton_navbar_hover(3)" onmouseleave="bouton_navbar_hover_end()" >
             <p>Administratif</p>
         </li>
         <li onclick="location.href='#'" onmouseover="bouton_navbar_hover(4)" onmouseleave="bouton_navbar_hover_end()" >

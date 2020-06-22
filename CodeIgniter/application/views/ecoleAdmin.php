@@ -6,7 +6,7 @@
             <?php if($Comp->Placement % 2 !== 0):?>
                 <div class="<?php echo $Comp->CSS; ?>">
                     <div class="vignette" onclick="smoothScroll(document.getElementById('<?php echo $Comp->Ancre; ?>'))">
-                        <img src="<?php echo base_url().$Comp->Image;?>" alt="<?php echo $Comp->Titre; ?>">
+                        <img src="<?php echo base_url().$Comp->Image;?>" alt="ecole">
                         <p class="titre_vignette"><?php echo $Comp->Titre; ?></p>
                     </div>
                 <?php endif; ?>
@@ -24,6 +24,10 @@
         <div class="container-lg text_section ecole_section" id="<?php echo $Comp1->Ancre; ?>">
             <h3><?php echo $Comp1->Titre; ?></h3>
             <p><?php echo $Comp1->Description; ?></p>
+            <?php
+                echo form_open('ecole/modifierTexte/'.$Comp1->PrimaK,array('method'=>'get','style'=>'text-align:center'));
+                echo form_submit('','Modifier',"class='btn btn-warning'");
+                echo form_close();?>
         </div>
     <?php endforeach; ?>
 </div>

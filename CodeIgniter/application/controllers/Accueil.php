@@ -296,7 +296,6 @@ class Accueil extends MY_Controller {
 		}
 	}
 
-
 	public function modifierActivite($PrimaK,$total){
 
 		$this->load->helper('form');

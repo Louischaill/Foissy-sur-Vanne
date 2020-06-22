@@ -4,14 +4,26 @@
  * This controller can be accessed
  * for (all) non logged in users
  */
-class Ecole extends MY_Controller {
-
-
+class Administratif extends MY_Controller {
+	public function index()
+	{
+		$this->load->model('Administratif_model');
+		$this->load->view("header");
+		if ($this->session->userdata("logged_in")) {
+			$this->load->view("navbar");
+		}
+		else {
+			$this->load->view("navbar");
+		}
+		$Composants = $this->Administratif_model->get_Data();
+		$data=array('Data' => $Composants);
+		$this->load->view("administratifAdmin",$data);
+		$this->load->view("footer");
+	}
 	public function modifierTexte($PrimaK){
-
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-		$this->load->model('Ecole_model');
+		$this->load->model('Administratif_model');
 
 		$this->form_validation->set_rules('Titre', 'Titre', 'required|trim');
 		$this->form_validation->set_rules('Description', 'Description', 'required|trim');
@@ -20,20 +32,20 @@ class Ecole extends MY_Controller {
 		if ($this->form_validation->run() === FALSE){
 
 			$this->db->select('*')
-			->from('EcoleFoissy')
+			->from('AdministratifFoissy')
 			->where('PrimaK',$PrimaK);
 			$query = $this->db->get();
+
 			$TitreAmodif = '';
 			$DescriptionAmodif='';
 			foreach ($query->result() as $resultat){
 				$TitreAmodif = $resultat->Titre;
 				$DescriptionAmodif = $resultat->Description;
 			}
-
 			$this->load->view('header');
 			$this->load->view('navbar');
 			$data=array('PrimaK' => $PrimaK, 'Titre'=>$TitreAmodif, 'Description'=>$DescriptionAmodif);
-			$this->load->view('modifier_texte2',$data);
+			$this->load->view('modifier_texte4',$data);
 			$this->load->view('footer');
 
 		}else{
@@ -44,27 +56,10 @@ class Ecole extends MY_Controller {
 				'Titre'=>$Titre,
 				'Description'=>$Description,
 				'PrimaK'=>$PrimaK);
-			if($this->Ecole_model->modif_text($data)){
-				redirect('ecole');
+			if($this->Administratif_model->modif_text($data)){
+				redirect('administratif');
 			}
-
 		}
-	}
-
-
-	public function index()
-	{
-		$this->load->model('Ecole_model');
-		$this->load->view("header");
-		$Composants = $this->Ecole_model->get_Sections();
-		$data=array('Composants' => $Composants);
-		if ($this->session->userdata("logged_in")) {
-			$this->load->view("navbar");
-		}
-		else {
-			$this->load->view("navbar");
-		}
-		$this->load->view("ecoleAdmin",$data);
-		$this->load->view("footer");
 	}
 }
+

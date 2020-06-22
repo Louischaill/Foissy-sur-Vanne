@@ -14,7 +14,7 @@
                 <div id="les_activites">
                     <?php foreach($Activite as $Comp2): ?>
                         <div class="activite_vignette">
-                            <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité">
+                            <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité" href="<?php echo site_url("detailsA/redirection/" + $Comp2->PrimaK);?>">
                             <p style="background-color: <?php echo $Comp2->Couleur; ?>"><?php echo $Comp2->Titre;?></p>
                         </div>
                     <?php endforeach; ?>

@@ -1,4 +1,7 @@
 /*------ page présentant des détails à propos d'une activité ------*/
+#image_centrale{
+    height: 25em;
+}
 .image_activite{
     padding: 1em;
     display: flex;
@@ -19,7 +22,6 @@
     background-size: cover;
 }
 .diaporama .legende{
-    margin: 0;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     height: 30em;

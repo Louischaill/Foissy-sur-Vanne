@@ -23,9 +23,10 @@
                   }
                   ?>
                   <?php foreach($Activite as $Comp2): ?>
-                    <div class="activite_vignette">
-                        <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité">
-                        <p style="background-color: <?php echo $Comp2->Couleur; ?>"><?php echo $Comp2->Titre;?></p>
+                    <div class="activite_vignette" >
+                        <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité"
+                         onclick="location.href='<?= site_url("detailsA/redirection/".$Comp2->PrimaK)?>'" >
+                        <p style="background-color: <?php echo $Comp2->Couleur; ?>" ><?php echo $Comp2->Titre;?></p>
                         <?php
                         echo form_open('accueil/modifierActivite/'.$Comp2->PrimaK."/".$total,array('method'=>'get','style'=>'text-align:center'));
                         echo form_submit('','Modifier',"class='btn btn-warning'");
