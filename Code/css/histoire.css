@@ -18,6 +18,11 @@
     height: 15em;
     object-fit: cover;
     border-radius: 100%;
+    transition: all 0.5s ease;
+}
+.vignette img:hover{
+    box-shadow: -1em 1em #bbbbbb;
+    transition: all 0.5s ease;
 }
 .groupe_vignette{
     display: flex;
