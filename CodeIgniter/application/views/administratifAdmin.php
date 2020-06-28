@@ -11,10 +11,13 @@
             <div class="page_container">
                 <p><?php echo $Comp->Description; ?></p>
             </div>
+
             <?php
-            echo form_open('administratif/modifierTexte/'.$Comp->PrimaK,array('method'=>'get','style'=>'text-align:center'));
+            echo form_open('administratif/modifierTexte/'.$Comp->PrimaK,
+                array('method'=>'get','style'=>'text-align:center'));
             echo form_submit('','Modifier le texte',"class='btn btn-warning'");
             echo form_close();?>
+
         </div>
     <?php endforeach; ?>
 </div>

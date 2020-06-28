@@ -9,11 +9,11 @@
       <div grid>
          <div column="+3 6">
             <?php echo validation_errors(); ?>
-            <?php echo form_open_multipart('detailsA/modifierDiapo/'.$PrimaK,array()); ?>
+            <?php echo form_open_multipart('detailsA/addDiapo/'.$PrimaK,array()); ?>
 
             <div class="form-group">
                <label  for="Description">Description</label>
-               <textarea value="<?=set_value('Description')?>" id="Description" rows="10" name="Description" required type="text" class="form-control"><?php echo $Description; ?></textarea>
+               <textarea value="<?=set_value('Description')?>" id="Description" rows="10" name="Description" required type="text" class="form-control"></textarea>
             </div>
            
             <div class="form_item" >

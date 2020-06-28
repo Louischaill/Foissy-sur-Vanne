@@ -2,7 +2,6 @@
 <script src="<?php echo base_url();?>assets/js/compte_rendus.js"></script>
 <div class="container-lg main_body">
     <?php foreach($Data as $Comp): ?>
-
         <div class="page">
             <div class="page_titre" style="background-image: url(<?php echo base_url().$Comp->Image;?>)">
                 <h3><?php echo $Comp->Titre; ?></h3>

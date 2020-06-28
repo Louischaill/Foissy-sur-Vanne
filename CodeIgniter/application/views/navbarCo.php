@@ -5,7 +5,7 @@
         <img class="grand_plus" alt="grand_plus" src="<?php echo base_url();?>assets/img/zoom.png">
     </div>
     <div id="parametres">
-        <img alt="roue-crantée" src="<?php echo base_url();?>assets/img/login.png" onclick="location.href='<?= site_url("auth")?>'">
+        <img alt="roue-crantée" src="<?php echo base_url();?>assets/img/logout.png" onclick="location.href='<?= site_url("auth/logout")?>'">
     </div>
     <div id="container_logo_ham">
         <div id="center_logo">

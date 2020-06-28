@@ -1,0 +1,165 @@
+/*------ page sur l'Histoire et les Points Intéressants de Foissy-sur-vanne ------*/
+#image_centrale{
+    height: 25em;
+}
+.vignette{
+    width: min-content;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.vignette .titre_vignette{
+    text-align: center;
+    font-size: 1.5em;
+}
+.vignette img{
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.groupe_vignette{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+    margin: 0 auto;
+}
+.histoire{
+    background-color: white;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.groupe_histoire{
+    margin: 0 1em;
+}
+.une_histoire{
+    padding: 1em;
+    margin-top: 2em;
+}
+.une_histoire img{
+    height: 15em;
+    width: 10em;
+    object-fit: cover;
+    border-radius: 4em;
+    margin: 0 auto;
+}
+.p_container_container{
+    display: flex;
+}
+.p_container{
+    padding: 2em;
+    border: thin solid #b6b6b6;
+    border-radius: 2em;
+    margin: auto 0;
+}
+.une_histoire p{
+    margin: 0;
+    text-align: justify;
+}
+.img_container{
+    display: flex;
+}
+.point{
+    background-color: white;
+    padding: 2em;
+    margin-top: 2em;
+}
+.lance_animation{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+}
+.lance_animation button{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: white;
+    color: #6FC068;
+    border: medium solid #6FC068;
+    font-size: 20px;
+    transition: all 0.25s ease-in-out;
+}
+.lance_animation button:hover{
+    background-color: #6FC068;
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+#button_description{
+    line-height: 96px;
+    margin-left: 1em;
+}
+.animation{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 100%;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+}
+#quit_button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #999999;
+}
+#quit_button h4{
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+#right_button, #left_button{
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+}
+#right_button h3,#left_button h3{
+    line-height: 64px;
+    text-align: center;
+}
+.indicateur{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin: 1em auto;
+}
+.petit_rond{
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 1em;
+}
+.diaporama{
+    display: flex;
+}
+.image_description{
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+}
+.image_description p{
+    color: white;
+}
+.image_description img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 30em;
+}
+.flex{
+    display: flex;
+}
+.center_vertical{
+    height: max-content;
+    margin: auto;
+}

@@ -15,23 +15,17 @@ class Auth_model extends CI_Model {
 
 		if ($query->num_rows())
 		{
-			// found row by username
 			$row = $query->row_array();
 
-			// now check for the password
 			if (password_verify($password, $row['password']))
 			{
-				// we not need password to store in session
 				unset($row['password']);
 				$this->_data = $row;
 				return ERR_NONE;
 			}
-
-			// password not match
 			return ERR_INVALID_PASSWORD;
 		}
 		else {
-			// not found
 			return ERR_INVALID_USERNAME;
 		}
 	}

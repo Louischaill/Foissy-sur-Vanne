@@ -1,4 +1,4 @@
-/*------ page de l'Ecole ------*/
+/*------ page de l'Ecole ET des démarches administratives------*/
 .ecole_section {
     margin-top: 2em;
 }
@@ -7,12 +7,21 @@
 }
 h1{
     text-align: center;
+    margin: 1em 0;
 }
 .vignette{
     width: min-content;
-    margin-right: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
     margin-top: 2em;
     cursor: pointer;
+}
+.vignette img{
+    transition: all 0.5s ease;
+}
+.vignette img:hover{
+    box-shadow: 1em 1em #bbbbbb;
+    transition: all 0.5s ease;
 }
 .carree_vignette{
     width: min-content;

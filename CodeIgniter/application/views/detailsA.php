@@ -16,9 +16,9 @@
     <div id="diaporama_images" style="display: none">
         <?php $Photo1 = ''?>
         <?php foreach($Diapo as $Comp2): ?>
-            <?php if($Comp2->Placement == 1){$Photo1 = $Comp2->Image;}?>
+            <?php if($Comp2->Placement == 1){$Photo1 = $Comp2->Image; $Des1 =$Comp2->Description; }?>
             <img src="<?php echo base_url().$Comp2->Image;?>">
-            
+            <p><?php echo base_url().$Comp2->Description;?></p>
         <?php endforeach; ?>
     </div>
     <div class="diaporama" id="diaporama" style="background-image: url(<?php echo base_url().$Photo1;?>)">
@@ -27,7 +27,7 @@
         </div>
         <div class="legende row">
             <div class="col-10">
-                <p><?php echo $Comp2->Description;?></p>
+                <p id="texte"><?php echo $Des1?></p>
             </div>
             <div class="col-2 button_container">
                 <div id="left_button" onclick="next_image()"><h3> > </h3></div>

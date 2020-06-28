@@ -10,20 +10,20 @@
             <?php echo validation_errors(); ?>
             <?php echo form_open_multipart('accueil/ajouterPersonnel/',array()); ?>
             <div class="form-group">
-               <label  for="Titre">Prénom NOM :</label>
-               <input value="<?=set_value('Titre')?>" id="Titre" name="Titre" required type="text" class="form-control form-control-lg">
+               <label  for="Annee">Année :</label>
+               <input value="<?=set_value('Annee')?>" id="Annee" name="Annee" required type="text" class="form-control form-control-lg">
             </div>
 
             <div class="form-group">
-               <label  for="Metier">Métier</label>
-               <input value="<?=set_value('Metier')?>" id="Metier" name="Metier" required type="text" class="form-control form-control-lg">
+               <label  for="Date">Date : </label>
+               <input value="<?=set_value('Date')?>" id="Date" name="Date" required type="text" class="form-control form-control-lg">
+               <input type="date" id="Date" name="trip-Date"
+       value="2018-07-22"
+       min="1950-01-01" max="2018-12-31">
             </div>
             <div class="form-group">
-               <label  for="Role">Rôle</label>
-               <input value="<?=set_value('Role')?>" id="Role" name="Role" required type="text" class="form-control form-control-lg">
-            </div>
-            <div class="form_item" >
-               <input type="file" name="userfile" size="20" />
+               <label  for="Description">Description : </label>
+               <input value="<?=set_value('Description')?>" id="Description" name="Description" required type="text" class="form-control form-control-lg">
             </div>
 
             <input type="submit" value="Ajouter" class="btn btn-primary">

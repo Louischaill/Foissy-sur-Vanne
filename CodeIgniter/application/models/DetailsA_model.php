@@ -30,16 +30,16 @@ class DetailsA_model extends CI_Model {
 		if($choix==1){
 			return	$this->db->set('Description',$data['Description'])->where('PrimaK',$data['PrimaK'])->update('DiapoActi');
 		}else{
-			return	$this->db->set('Description',$data['Description'])->set('Image',$data['Image'])->where('PrimaK',$data['PrimaK'])->update('DetailsAFoissy');
+			return	$this->db->set('Description',$data['Description'])->set('Image',$data['Image'])->where('PrimaK',$data['PrimaK'])->update('DiapoActi');
 		}
 	}
 	public function add_DiapoA($data){
 		return	$this->db->insert('DiapoActi', $data);
 	}
-	public function delete_personnel($data){
+	public function delete_diapo($data){
 		return $this->db
 		->where('PrimaK',$data)
-		->delete("DetailsAFoissy");
+		->delete("DiapoActi");
 	}
 	public function diminuerDiapo($data){
 		$place = $data->Placement;

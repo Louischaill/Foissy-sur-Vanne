@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/PLUI.css" type="text/css"/>
 <div class="container-lg main_body">
+    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='<?= site_url("administratif")?>'">Retourner en arrière</button>
     <?php foreach($Data as $Comp): ?>
     <h1><?php echo $Comp->TitreDom; ?></h1>
 
