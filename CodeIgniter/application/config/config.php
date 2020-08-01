@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |/~legrelle/PROJETPHP-Simply_Forms/
 */
-$config['base_url'] = 'http://localhost/public_html/CodeIgniter/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------

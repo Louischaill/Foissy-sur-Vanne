@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/PLUI.css" type="text/css"/>
-<div class="container main">
+<div class="container-lg main_body">
    <div class="page-header">
       <h1>Modifier <?php echo $Titre; ?></h1>
    </div>

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/ecole.css" type="text/css"/>
-<div class="container main">
+<div class="container-lg main_body">
    <div class="page-header">
       <h1>Modifier le personnel</h1>
    </div>

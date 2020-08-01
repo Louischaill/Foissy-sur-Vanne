@@ -1,4 +1,5 @@
  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/index.css" type="text/css"/>
+ <script src="<?php echo base_url();?>assets/js/activites.js"></script>
  <div class="container-lg main_body">
     <div class="row">
         <div class="col-lg-4 text_section">
@@ -11,22 +12,27 @@
         </div>
         <div class="col-lg-8">
             <div class="activities">
+                <div class="bouton_suivant" id="previous_button" style="opacity: 0">
+                    <p> < </p>
+                </div>
                 <div id="les_activites">
                     <?php 
                     $total = 0;
                     foreach($Activite as $C){
-                      $total = $total+1;
-                  }
-                  ?>
-                  <?php foreach($Activite as $Comp2): ?>
-                    <div class="activite_vignette" >
-                        <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité"
+                        $total = $total+1;
+                    }
+                    ?>
+                    <?php $i=0; foreach($Activite as $Comp2): $i=$i+1; ?>
+                    <div class="activite_vignette" <?php if($i>4){ echo("style='display: none; opacity: 0'"); }; ?> >
+                        <div class="ombre">
+                            <img src="<?php echo base_url().$Comp2->Image;?>" alt="vignette activité"
                          onclick="location.href='<?= site_url("detailsA/redirection/".$Comp2->PrimaK)?>'" >
-                        <p style="background-color: <?php echo $Comp2->Couleur; ?>" ><?php echo $Comp2->Titre;?></p>
+                            <p style="background-color: <?php echo $Comp2->Couleur; ?>" ><?php echo $Comp2->Titre;?></p>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
-            <div class="bouton_suivant">
+            <div class="bouton_suivant" id="next_button">
                 <p> > </p>
             </div>
         </div>

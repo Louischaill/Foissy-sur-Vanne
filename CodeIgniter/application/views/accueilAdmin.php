@@ -78,7 +78,7 @@
             }
         ?>
         <?php foreach($Personnel as $Comp3): ?>
-            <div class="personne">
+            <div class="personne" style='border : solid'>
                 <img src="<?php echo base_url().$Comp3->Image;?>" alt="photo du membre">
                 <p><?php echo $Comp3->Titre;?><br>
                     <?php echo $Comp3->Metier;?><br>
@@ -95,8 +95,8 @@
                 </div>
             <?php endforeach;?>
             <?php $placem = 0;
-            echo form_open('accueil/ajouterPersonnel/',array('method'=>'get','style'=>'text-align:center'));
-            echo form_submit('','+',"class='btn btn-success'");
+            echo form_open('accueil/ajouterPersonnel/',array('method'=>'get','style'=>'display: flex'));
+            echo form_submit('','+',"class='btn btn-success horizontal_center'");
             echo form_close();?>
         </div>
     </div>

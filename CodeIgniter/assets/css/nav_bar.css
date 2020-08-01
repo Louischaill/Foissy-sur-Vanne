@@ -7,6 +7,7 @@ body{
 #image_centrale{
     width: 100%;
     object-fit: cover;
+    height: 25em;
 }
 .main_body{
     padding: 4em;
@@ -138,6 +139,7 @@ footer{
     position: absolute;
     right: 1em;
     top: 1em;
+    cursor: pointer;
 }
 #parametres img{
     width: 3em;

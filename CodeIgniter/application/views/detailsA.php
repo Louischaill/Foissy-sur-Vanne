@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?php echo base_url();?>assets/css/details_activites.css" type="text/css"/>
+<script src="<?php echo base_url();?>assets/js/diaporama.js"></script>
 
 <div class="container-lg main_body">
     <div class="row">

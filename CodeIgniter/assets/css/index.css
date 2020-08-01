@@ -3,7 +3,9 @@
 #image_centrale{
 	height: 50em;
 }
-
+.horizontal_center{
+	margin: auto 1em;
+}
 .activite_vignette img{
 	width: 12em;
 	height: 9em;
@@ -16,8 +18,11 @@
 	height: 48px;
 	margin:0;
 }
-.activite_vignette:hover{
+.activite_vignette .ombre:hover{
 	box-shadow: 1em 1em #bbbbbb;
+	transition: all 0.5s ease;
+}
+.activite_vignette .ombre{
 	transition: all 0.5s ease;
 }
 .activite_vignette{
@@ -42,8 +47,9 @@
 	height: 10em;
 	width: 4em;
 	background-color: #C4C4C4;
-	cursor: pointer;
-	margin: auto 2em;
+	cursor: default;
+	margin: auto 1em;
+	user-select: none;
 }
 .bouton_suivant p{
 	font-size: 2em;
